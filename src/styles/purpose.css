@@ -1,0 +1,129 @@
+/* Propósito: "Cada elección la deciden quienes llegan a votar" */
+.purpose-line {
+  max-width: 780px;
+  margin: -12px auto 32px;
+  padding: 14px 20px;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 600;
+  color: var(--wine);
+  background: var(--warm);
+  border-left: 6px solid var(--magenta);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  text-align: left;
+}
+
+.person-counts {
+  margin: 28px 0;
+  padding: 24px;
+  background: var(--warm);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.counts-title {
+  margin: 0 0 6px;
+  color: var(--wine);
+  font: 700 24px Montserrat, sans-serif;
+}
+
+.counts-lead {
+  margin: 0 0 16px;
+  font-size: 19px;
+  color: var(--muted);
+}
+
+.counts-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 16px;
+}
+
+.counts-card {
+  padding: 16px 18px;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.counts-card dt {
+  margin: 0 0 4px;
+  font: 700 17px Montserrat, sans-serif;
+  color: var(--muted);
+}
+
+.counts-card dd {
+  margin: 0;
+  font-size: 19px;
+  color: var(--ink);
+}
+
+.counts-card dd strong {
+  display: block;
+  font: 800 clamp(26px, 5vw, 38px) Montserrat, sans-serif;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.counts-card--voted {
+  border-color: var(--magenta);
+}
+
+.counts-card--voted dd strong {
+  color: var(--magenta);
+}
+
+.counts-bar {
+  height: 18px;
+  overflow: hidden;
+  background: #e5e2df;
+  border: 2px solid #b0adb3;
+  border-radius: 999px;
+}
+
+.counts-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--magenta);
+}
+
+.counts-reference {
+  margin: 16px 0 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.family-question {
+  margin: 24px auto 0;
+  max-width: 1000px;
+  padding: 20px 24px;
+  background: var(--paper);
+  border: 2px solid var(--wine);
+  border-radius: var(--radius-md);
+}
+
+.family-question-label {
+  margin: 0 0 6px;
+  font: 700 15px Montserrat, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.family-question-text {
+  margin: 0;
+  font: 700 22px/1.4 Montserrat, sans-serif;
+  color: var(--wine);
+}
+
+.country-insight-banner + .country-insight-banner {
+  margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .counts-pair {
+    grid-template-columns: 1fr;
+  }
+}
